@@ -1,0 +1,18 @@
+export const Data = [
+    { id: 1, src: "https://i.pinimg.com/736x/a8/97/6f/a8976f36635351fc6ebbffb909dbc738.jpg", },
+    { id: 2, src: "https://i.pinimg.com/736x/20/76/1a/20761a7d2890a65ccb3de5a0e1ea2a7e.jpg", },
+    { id: 3, src: "https://i.pinimg.com/736x/ae/05/52/ae0552914f858b0e87e5ea8e934e3a17.jpg", },
+    { id: 4, src: "https://i.pinimg.com/736x/c2/29/18/c2291836b5243b2c91f43fa5aa5d9853.jpg", },
+    { id: 5, src: "https://i.pinimg.com/736x/47/cd/9d/47cd9d94c0af14672a910fdeb8d75949.jpg", },
+    { id: 6, src: "https://i.pinimg.com/736x/ad/a3/6e/ada36ee16c1766e286a93022f58388f7.jpg", },
+    { id: 7, src: "https://i.pinimg.com/736x/cd/31/8f/cd318f1bfbcbd60cba4d84dfcc558895.jpg", },
+    { id: 8, src: "https://i.pinimg.com/736x/84/35/87/843587c62ad33a7bfdae2112d511beb8.jpg", },
+    { id: 9, src: "https://i.pinimg.com/736x/d0/55/47/d05547ee0eb099b379c0465103acc769.jpg", },
+    { id: 10, src: "https://i.pinimg.com/736x/c8/ff/e5/c8ffe56a7c131e2710e287964a04c654.jpg", },
+    { id: 11, src: "https://i.pinimg.com/736x/f7/4f/d6/f74fd66920d9fee77b284488f427b8c0.jpg", },
+    { id: 12, src: "https://i.pinimg.com/736x/54/8d/69/548d699bb953533320aa927ff6b9849e.jpg", },
+    { id: 13, src: "https://i.pinimg.com/736x/f6/d7/8c/f6d78c0ce747124cfacdc793d0ecc445.jpg", },
+    { id: 14, src: "https://i.pinimg.com/736x/ec/8b/9b/ec8b9bf2e4d381fbcf9c76d4ea95173f.jpg", },
+    { id: 15, src: "https://i.pinimg.com/736x/53/59/48/5359487505349953a3bb9ffdb1d818c2.jpg", },
+    { id: 16, src: "https://i.pinimg.com/736x/34/f0/e5/34f0e5ecdac0e6ed2804719762bcb2e8.jpg", },
+];

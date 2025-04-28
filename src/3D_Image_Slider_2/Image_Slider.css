@@ -1,0 +1,50 @@
+section#imgSection {
+  width: 100%;
+  height: 400vh;
+  position: relative;
+}
+.imgContainer {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  overflow: hidden;
+  position: sticky;
+  top: 0;
+  perspective-origin: center;
+  perspective: 300px;
+  transform-style: preserve-3d;
+}
+.imgWrapper {
+  transform-style: preserve-3d;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.imgParent {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  will-change: transform;
+  position: absolute;
+  transform-style: preserve-3d;
+  pointer-events: none;
+}
+.imgParent img {
+  width: 12vw;
+  height: 12vw;
+  object-fit: cover;
+  transform-origin: right;
+  will-change: transform;
+  pointer-events: all;
+}
+
+@media (max-width: 500px) {
+  .imgParent img {
+    width: 26vw;
+    height: 18vw;
+  }
+}
