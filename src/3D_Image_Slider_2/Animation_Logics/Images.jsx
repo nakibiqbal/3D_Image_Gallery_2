@@ -7,6 +7,7 @@ gsap.registerPlugin(ScrollTrigger);
 
 const Images = ({ index, src, parentRef }) => {
     const imgRef = useRef(null);
+    const [moved, setMoved] = useState(false);
 
     // For small screen size
     const [isSmallScreen, setIsSmallScreen] = useState(window.innerWidth <= 500);
@@ -24,6 +25,22 @@ const Images = ({ index, src, parentRef }) => {
             window.removeEventListener("resize", handleResize);
         };
     }, []);
+
+    // Reset the image position when tapping anywhere on the screen
+    useEffect(() => {
+        const handleOutsideTap = () => {
+            console.log("Global click listener triggered");
+            setMoved(false); // Reset the image position
+        };
+
+        window.addEventListener("click", handleOutsideTap);
+
+        // Cleanup listener on unmount
+        return () => {
+            window.removeEventListener("click", handleOutsideTap);
+        };
+    }, []);
+
 
     useGSAP(
         () => {
@@ -61,7 +78,17 @@ const Images = ({ index, src, parentRef }) => {
         >
 
             <motion.img
-                whileHover={{ x: isSmallScreen ? 50 : 100 }}
+                onTap={(e) => {
+                    e.stopPropagation(); // Prevent event bubbling    
+                    console.log("Image tapped");
+                    if (isSmallScreen) {
+                        setMoved(!moved);
+                    }
+                }}
+                animate={{
+                    x: isSmallScreen && moved ? 50 : 0,
+                }}
+                {...(!isSmallScreen && { whileHover: { x: 100 } })}
                 transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
                 src={src}
                 loading="lazy"

@@ -16,7 +16,11 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.fullSpace h3 {
   color: #e6ffc8;
   font-family: sans-serif;
-  font-size: 24px;
+  font-size: 32px;
+  font-weight: lighter;
+  text-align: center;
 }
