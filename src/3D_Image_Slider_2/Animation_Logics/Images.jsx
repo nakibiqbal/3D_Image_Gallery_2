@@ -88,7 +88,7 @@ const Images = ({ index, src, parentRef }) => {
                 animate={{
                     x: isSmallScreen && moved ? 50 : 0,
                 }}
-                {...(!isSmallScreen && { whileHover: { x: 100 } })}
+                {...(!isSmallScreen && { whileHover: { x: "5.208vw" } })} // Converted 100px to vw
                 transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
                 src={src}
                 loading="lazy"

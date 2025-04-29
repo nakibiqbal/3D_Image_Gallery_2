@@ -42,6 +42,11 @@ section#imgSection {
   pointer-events: all;
 }
 
+@media (min-width: 1919px) {
+  .imgContainer {
+    perspective: 15.625vw;
+  }
+}
 @media (max-width: 500px) {
   .imgParent img {
     width: 26vw;
